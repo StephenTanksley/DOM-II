@@ -56,22 +56,58 @@ window.addEventListener('keyup', (e) => { //adding an event listener to the wind
 
 // 4. scroll 
 
-const homeBG = document.querySelector('.home')
+const introBG = document.querySelector('.intro')
 const introImg = document.querySelector('.introImg')
 const introDistance = introImg.offsetTop + 'px'
 
 function logScroll(e) {
     // console.log(window.scrollY)
-    if(window.scrollY >= introImg.offsetTop) {
-        homeBG.classList.add('blue');
+    if (window.scrollY >= introImg.offsetTop) {
+        introBG.classList.add('blue');
     } else {
-        homeBG.classList.remove('blue')
+        introBG.classList.remove('blue')
     }
 }
 
 window.addEventListener('scroll', logScroll)
 
-// 5. mouseover 
+// 5. mouseenter 
 
-// On mouseover, I'm going to make an image disappear.
+// On mouseenter, I'm going to make a button disappear for four seconds.
+
+const vanishBtn = document.querySelector('.btn-1')
+
+function vanishButton() {
+    vanishBtn.classList.add('hidden');
+    setTimeout(function () {
+        vanishBtn.classList.remove('hidden')
+    }, 4000);
+}
+
+vanishBtn.addEventListener('mouseenter', vanishButton)
+
+// 6. Mouseout
+
+const webpage = document.querySelector('.destination-img');
+
+function excite() {
+    webpage.classList.add('tremble')
+}
+
+window.addEventListener('mouseover', excite);
+
+
+// 7. Load - Will display an alert when the page has loaded.
+
+const notification = document.querySelector('.container');
+
+function notify() {
+    alert ('The webpage has loaded.')
+}
+
+notification.addEventListener('load', notify)
+
+// 8. & 9. blur/focus -
+
+
 
