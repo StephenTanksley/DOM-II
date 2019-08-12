@@ -10,6 +10,7 @@ const logoHeading = document.querySelector('.logo-heading');
 
 function scaleUp(e) {
     logoHeading.classList.toggle('large');
+    e.stopPropagation(); //stop propagation event listener method.
 };
 logoHeading.addEventListener('dblclick', scaleUp);
 
@@ -110,7 +111,7 @@ window.addEventListener('mouseover', excite);
 //     }, 2000);
 // }
 
-notification.onload = notify();
+// notification.onload = notify();
 
 // 8. & 9. blur/focus -
 
