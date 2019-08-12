@@ -184,15 +184,21 @@ img {
 .hidden {
   visibility: hidden;
 }
+.input-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 5rem;
+  transition-duration: 0.1s;
+}
 .tremble {
   font-size: 1.001rem;
 }
-.drag-btn {
-  transform: scale(1);
-  width: 5rem;
-}
-.drag-big {
-  transform: scale(3);
+.text-content-1 {
+  color: pink;
 }
 .tremble:hover {
   animation-duration: 0.2s;

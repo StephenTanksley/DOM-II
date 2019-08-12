@@ -99,15 +99,41 @@ window.addEventListener('mouseover', excite);
 
 // 7. Load - Will display an alert when the page has loaded.
 
-const notification = document.querySelector('.container');
 
-function notify() {
-    alert ('The webpage has loaded.')
-}
+//disabled because it's annoying to always have it on. This code works.
 
-notification.addEventListener('load', notify)
+// const notification = document.querySelector('.container');
+
+// function notify() {
+//     setTimeout(function () {
+//         alert ('The webpage has loaded.')        
+//     }, 2000);
+// }
+
+notification.onload = notify();
 
 // 8. & 9. blur/focus -
 
+const formFocus = document.querySelector('input[type="password"]')
 
+formFocus.addEventListener('focus', (e) => {
+    event.target.style.background = 'pink'
+});
 
+formFocus.addEventListener('blur', (e) => {
+    event.target.style.background = ''
+});
+
+// 10. mouseover
+
+const passwordContainer = document.querySelector('.input-container');
+const passwordForm = document.querySelector('#form')
+
+function showForm() {
+    passwordForm.classList.remove('hidden')
+    setTimeout(function () {
+        passwordForm.classList.add('hidden')
+    }, 10000);
+}
+
+passwordContainer.addEventListener('mouseover', showForm)
