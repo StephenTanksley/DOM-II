@@ -11,7 +11,7 @@
   <link href="css/index.css" rel="stylesheet">
 
   <script src="js/index.js" async></script>
-  <!-- <script src="http://www.cornify.com/js/cornify.js"></script> -->
+  <script src="http://www.cornify.com/js/cornify.js" async></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -34,7 +34,7 @@
 
   <div class="container home">
     <header class="intro">
-      <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <img src="img/fun-bus.jpg" class ="introImg" alt="bus in the sand">
       <h2>Welcome To Fun Bus!</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design,
         travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun
@@ -65,7 +65,7 @@
         <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
-        <h2>Adventure Awaits</h2>
+        <h2>Adventure</h2><h2>Awaits</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty
           simple traveling fun WordPress wanderlust darn simple organized.</p>
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website
@@ -85,7 +85,7 @@
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign.
           Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn btn-1">Sign Me Up!</div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
@@ -107,28 +107,6 @@
   </footer>
 
 
-
-<!-- Fun little keylogger - optional event listener. -->
-  <!-- <script>
-    const pressed = []; // accumulator
-    const secretCode = 'adventure'; //this is the code we're checking for.
-
-    window.addEventListener('keyup', (e) => { //adding an event listener to the window itself.
-      console.log(e.key); //we're logging every key pressed to the console.
-      pressed.push(e.key); //we're pushing every key pressed to the accumulator 'pressed'.
-      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
-      //we have to check the array from the back going forward. We first get the length of secretcode and specify that we're starting from the back and moving forward. Starting from the back, we use
-      //secretcode.length - 1 and then use a - at the beginning to specify that we're starting from the back. To check it against Pressed, we need to use pressed.length - secretcode.length.
-
-      if (pressed.join('').includes(
-          secretCode
-          )) { //we use .join() to turn the pressed array back into a string for the purpose of checking it against secretCode.
-        console.log('DING DING! YOU DID IT!'); //if it worked and we typed the code correctly, it'll do the thing.
-        cornify_add(); //unicorns and rainbows!
-      }
-      console.log(pressed); //this will log the data accumulated into the array.
-    });
-  </script> -->
 
 </body>
 

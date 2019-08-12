@@ -177,6 +177,13 @@ img {
 .large {
   transform: scale(1.3);
 }
+.blue {
+  background-color: rgba(143, 143, 240, 0.767);
+  color: white;
+}
+.hidden {
+  display: hidden;
+}
 .main-navigation {
   width: 100%;
   height: 90px;
