@@ -103,17 +103,17 @@ window.addEventListener('mouseover', excite);
 
 //disabled because it's annoying to always have it on. This code works.
 
-// const notification = document.querySelector('.container');
+const notification = document.querySelector('.container');
 
-// function notify() {
-//     setTimeout(function () {
-//         alert ('The webpage has loaded.')        
-//     }, 2000);
-// }
+function notify() {
+    setTimeout(function () {
+        alert ('The webpage has loaded.')        
+    }, 2000);
+}
 
-// notification.onload = notify();
+notification.onload = notify();
 
-// 8. & 9. blur/focus -
+// 8. & 9. blur/focus - when the admin login pops up, it'll either blur or focus depending on which field is focused.
 
 const formFocus = document.querySelector('input[type="password"]')
 
@@ -125,7 +125,7 @@ formFocus.addEventListener('blur', (e) => {
     event.target.style.background = ''
 });
 
-// 10. mouseover
+// 10. mouseover - Move your mouse just above the footer and the admin login will pop up.
 
 const passwordContainer = document.querySelector('.input-container');
 const passwordForm = document.querySelector('#form')
